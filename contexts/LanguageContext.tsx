@@ -182,18 +182,20 @@ export const translations = {
           { title: "Digital Automation", desc: "AI-driven workflows for multi-channel EDM & Social Media content." },
           { title: "MENA Operations", desc: "Protocols for WhatsApp Private Domain & Visa Approval workflows." }
         ],
-        funnelTitle: "Conversion Funnel Analysis",
-        funnelStat: "Pre-registrations (+45.6% YoY)",
-        funnelDesc: "leading to a <span class='text-[#0B6E99] underline decoration-2 underline-offset-4 decoration-[#DDEBF1]'>40.6% Show-up Rate</span>.",
-        funnelFooter: "Shifting from volume-based traffic to quality-focused retention.",
-        authorityTitle: "Purchasing Authority",
-        authorityStat: "Decision Makers",
-        authorityFooter: "& Joint Decision Makers",
-        roiTitle: "Channel ROI Attribution",
-        menaTitle: "Strategic MENA Impact",
-        menaDesc: "Addressing <span class='text-[#6940A5] bg-[#EAE4F2] px-1 rounded'>35.79%</span> of Exhibitor demand for Middle East expansion.",
-        menaPoolTitle: "VIP Matchmaking Pool",
-        menaPoolDesc: "Saudi & UAE buyers account for <span class='text-[#37352f] font-black'>8%</span> of the total high-value pool."
+        dashboard: {
+          intlReach: "International Reach",
+          audienceQuality: "Audience Quality",
+          productDemand: "Product Demand",
+          regionalExp: "Regional Expansion: MENA",
+          signals: "Forward Signals",
+          yoyBadge: "YoY +45.6%",
+          procurement: "Procurement",
+          others: "Others",
+          growth: "Growth",
+          decisionMakers: "Decision Makers",
+          openRate: "Avg Open Rate",
+          intlAttendance: "Int'l Attendance"
+        }
       },
       activationTitle: "Regional Market Activation",
       activation: {
@@ -414,18 +416,20 @@ export const translations = {
           { title: "数字化自动化", desc: "AI 驱动的多渠道 EDM 和社交媒体内容工作流。" },
           { title: "MENA 运营", desc: "WhatsApp 私域管理及签证审批工作流协议。" }
         ],
-        funnelTitle: "转化漏斗分析",
-        funnelStat: "预登记 (+45.6% 同比增长)",
-        funnelDesc: "带来了 <span class='text-[#0B6E99] underline decoration-2 underline-offset-4 decoration-[#DDEBF1]'>40.6% 的到场率</span>。",
-        funnelFooter: "从基于流量的规模增长转向注重质量的用户留存。",
-        authorityTitle: "采购决策权",
-        authorityStat: "决策者",
-        authorityFooter: "及共同决策者",
-        roiTitle: "渠道 ROI 归因",
-        menaTitle: "战略性 MENA 影响力",
-        menaDesc: "响应了 <span class='text-[#6940A5] bg-[#EAE4F2] px-1 rounded'>35.79%</span> 展商的中东扩张需求。",
-        menaPoolTitle: "VIP 配对池",
-        menaPoolDesc: "沙特和阿联酋买家占高价值总池的 <span class='text-[#37352f] font-black'>8%</span>。"
+        dashboard: {
+          intlReach: "国际影响力",
+          audienceQuality: "观众质量分布",
+          productDemand: "产品需求趋势",
+          regionalExp: "区域扩张：中东非 (MENA)",
+          signals: "前瞻性信号",
+          yoyBadge: "同比 +45.6%",
+          procurement: "采购/决策",
+          others: "其他",
+          growth: "增长",
+          decisionMakers: "拥有决策权",
+          openRate: "EDM 打开率",
+          intlAttendance: "国际观众占比"
+        }
       },
       activationTitle: "区域市场活动落地",
       activation: {

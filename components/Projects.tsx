@@ -2,6 +2,7 @@ import React from 'react';
 import { WEB3_PROJECTS, EXHIBITIONS } from '../constants';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Database, Bot, Globe } from 'lucide-react';
+import { PerformanceDashboard } from './PerformanceDashboard';
 
 export const Projects: React.FC = () => {
   const { t } = useLanguage();
@@ -397,7 +398,7 @@ export const Projects: React.FC = () => {
                  </div>
               </div>
 
-              {/* Block 3: Overall Performance Impact (Bento Grid) */}
+              {/* Block 3: Overall Performance Impact (Refactored Dashboard) */}
               <div className="pt-8">
                  <div className="flex items-center gap-3 mb-8">
                     <span className="w-10 h-10 rounded-full bg-[#EAE4F2] flex items-center justify-center border border-[#e9e3f0] text-[#D9730D] shadow-sm text-lg">📈</span>
@@ -443,95 +444,8 @@ export const Projects: React.FC = () => {
                    </div>
                  </div>
 
-                 {/* Original Metrics Grid */}
-                 <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-                    
-                    {/* Card 1: Large - The Funnel */}
-                    <div className="col-span-12 md:col-span-8 bg-[#F7F6F3] border border-[#E1E1E1] rounded-[1.5rem] p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
-                        <div>
-                            <h5 className="text-[#9B9A97] font-bold text-xs uppercase tracking-widest mb-4 flex items-center gap-2">
-                               <span className="w-2 h-2 rounded-full bg-[#0B6E99]"></span>
-                               {t.projects.performance.funnelTitle}
-                            </h5>
-                            <div className="mb-4">
-                                <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-3 mb-1">
-                                    <span className="text-4xl md:text-5xl font-black text-[#37352f] tracking-tight">4,714</span>
-                                    <span className="text-sm font-bold text-[#0B6E99] bg-[#DDEBF1] px-2 py-0.5 rounded">{t.projects.performance.funnelStat}</span>
-                                </div>
-                                <div className="text-xl md:text-2xl font-bold text-[#37352f] leading-tight mt-2" dangerouslySetInnerHTML={{ __html: t.projects.performance.funnelDesc }} />
-                            </div>
-                        </div>
-                        <div className="text-xs text-[#787774] font-medium border-t border-[#E1E1E1] pt-4 mt-2 flex items-center gap-2">
-                            <span className="w-4 h-px bg-[#787774]"></span>
-                            {t.projects.performance.funnelFooter}
-                        </div>
-                    </div>
-
-                    {/* Card 4: Small - Decision Power */}
-                    <div className="col-span-12 md:col-span-4 bg-[#F7F6F3] border border-[#E1E1E1] rounded-[1.5rem] p-6 flex flex-col justify-center items-center text-center hover:shadow-md transition-shadow duration-300 relative overflow-hidden">
-                        <div className="absolute top-0 right-0 p-4 opacity-10">
-                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                        </div>
-                        <h5 className="text-[#9B9A97] font-bold text-xs uppercase tracking-widest mb-3">{t.projects.performance.authorityTitle}</h5>
-                        <div className="text-6xl font-black text-[#37352f] mb-3 tracking-tighter">76%</div>
-                        <div className="text-xs text-[#37352f] font-bold bg-white border border-[#E1E1E1] px-3 py-1.5 rounded-full shadow-sm">
-                            {t.projects.performance.authorityStat}
-                        </div>
-                        <div className="text-[10px] text-[#9B9A97] mt-2 font-medium">
-                            {t.projects.performance.authorityFooter}
-                        </div>
-                    </div>
-
-                    {/* Card 2: Medium - Channel ROI Table */}
-                    <div className="col-span-12 md:col-span-6 bg-[#F7F6F3] border border-[#E1E1E1] rounded-[1.5rem] p-6 hover:shadow-md transition-shadow duration-300">
-                        <h5 className="text-[#9B9A97] font-bold text-xs uppercase tracking-widest mb-6 flex items-center gap-2">
-                             <span className="w-2 h-2 rounded-full bg-[#D9730D]"></span>
-                             {t.projects.performance.roiTitle}
-                        </h5>
-                        <div className="w-full text-sm space-y-3">
-                            <div className="flex justify-between items-center p-3 bg-white border border-[#E1E1E1] rounded-xl shadow-sm">
-                                <div className="flex items-center gap-2">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-[#25D366]"></span>
-                                    <span className="text-[#37352f] font-bold">WhatsApp</span>
-                                </div>
-                                <span className="text-[#37352f] font-black">48.9%</span>
-                            </div>
-                            <div className="flex justify-between items-center px-3 py-2 border-b border-[#E1E1E1] border-dashed">
-                                <div className="flex items-center gap-2">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-[#787774]"></span>
-                                    <span className="text-[#787774] font-medium">EDM</span>
-                                </div>
-                                <span className="text-[#787774] font-medium">43.3%</span>
-                            </div>
-                            <div className="flex justify-between items-center px-3 py-2">
-                                <div className="flex items-center gap-2">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-[#787774]"></span>
-                                    <span className="text-[#787774] font-medium">TikTok Ads</span>
-                                </div>
-                                <span className="text-[#787774] font-medium">3.1%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Card 3: Medium - MENA Strategy */}
-                    <div className="col-span-12 md:col-span-6 bg-[#F7F6F3] border border-[#E1E1E1] rounded-[1.5rem] p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
-                         <div>
-                            <h5 className="text-[#9B9A97] font-bold text-xs uppercase tracking-widest mb-4 flex items-center gap-2">
-                                <span className="w-2 h-2 rounded-full bg-[#6940A5]"></span>
-                                {t.projects.performance.menaTitle}
-                            </h5>
-                            <p className="text-[#37352f] font-bold text-lg mb-6 leading-snug" dangerouslySetInnerHTML={{ __html: t.projects.performance.menaDesc }} />
-                         </div>
-                         <div className="bg-white rounded-xl p-4 border border-[#E1E1E1] shadow-sm flex items-start gap-3">
-                            <div className="min-w-[4px] h-full bg-[#6940A5] rounded-full"></div>
-                            <p className="text-xs text-[#787774] leading-relaxed">
-                                <strong className="text-[#37352f] block mb-1">{t.projects.performance.menaPoolTitle}</strong>
-                                <span dangerouslySetInnerHTML={{ __html: t.projects.performance.menaPoolDesc }} />
-                            </p>
-                         </div>
-                    </div>
-
-                 </div>
+                 {/* New Performance Dashboard */}
+                 <PerformanceDashboard />
               </div>
             </div>
           </div>
