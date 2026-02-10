@@ -1,5 +1,5 @@
 import React from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, LineChart, Line, Legend, Cell } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, LineChart, Line, Legend, Cell, LabelList } from 'recharts';
 import { useLanguage } from '../contexts/LanguageContext';
 import { TrendingUp, Users, Globe, Zap, CheckCircle2 } from 'lucide-react';
 
@@ -43,14 +43,20 @@ const MENA_DATA = [
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
     return (
-      <div className="bg-white border border-[#ededeb] p-2 rounded shadow-sm text-xs font-medium">
+      <div className="bg-white border border-[#ededeb] p-2 rounded shadow-sm text-xs font-medium z-50">
         <p className="mb-1 text-[#9B9A97]">{label}</p>
-        {payload.map((entry: any, index: number) => (
-          <div key={index} className="flex items-center gap-2 text-[#37352f]">
-             <span className="w-2 h-2 rounded-full" style={{ backgroundColor: entry.color || entry.fill }}></span>
-             <span>{entry.name}: {entry.value}</span>
-          </div>
-        ))}
+        {payload.map((entry: any, index: number) => {
+          // Heuristic to determine if we should show %:
+          // MENA data has 'year' in payload
+          // Audience data has 'color' in payload and uses 'name' key for category
+          const isPercentage = entry.payload.year || entry.payload.color;
+          return (
+            <div key={index} className="flex items-center gap-2 text-[#37352f]">
+               <span className="w-2 h-2 rounded-full" style={{ backgroundColor: entry.color || entry.fill }}></span>
+               <span>{entry.name === 'value' ? 'Share' : entry.name}: {entry.value}{isPercentage ? '%' : ''}</span>
+            </div>
+          );
+        })}
       </div>
     );
   }
@@ -148,7 +154,7 @@ export const PerformanceDashboard: React.FC = () => {
              </h4>
              <div className="flex-1 w-full min-h-[200px]">
                 <ResponsiveContainer width="100%" height="100%">
-                   <BarChart data={MENA_DATA}>
+                   <BarChart data={MENA_DATA} margin={{ top: 20 }}>
                       <CartesianGrid vertical={false} horizontal={false} />
                       <XAxis dataKey="year" axisLine={false} tickLine={false} tick={{fontSize: 12, fill: '#37352f', fontWeight: 600}} dy={10} />
                       <Tooltip content={<CustomTooltip />} cursor={{fill: 'transparent'}} />
@@ -156,6 +162,12 @@ export const PerformanceDashboard: React.FC = () => {
                         {MENA_DATA.map((entry, index) => (
                           <Cell key={`cell-${index}`} fill={entry.fill} />
                         ))}
+                        <LabelList 
+                          dataKey="value" 
+                          position="top" 
+                          formatter={(val: number) => `${val}%`} 
+                          style={{ fill: '#37352f', fontSize: 12, fontWeight: 600 }} 
+                        />
                       </Bar>
                    </BarChart>
                 </ResponsiveContainer>
@@ -210,10 +222,10 @@ export const PerformanceDashboard: React.FC = () => {
                       <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f0f0f0" />
                       <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fontSize: 12, fill: '#9B9A97'}} dy={10} />
                       <Tooltip content={<CustomTooltip />} />
-                      {/* 0.4 curve tension as requested */}
-                      <Line type="monotone" dataKey="catA" stroke={NOTION_BLUE} strokeWidth={2} dot={false} tension={0.4} />
-                      <Line type="monotone" dataKey="catB" stroke={NOTION_RED} strokeWidth={2} dot={false} tension={0.4} />
-                      <Line type="monotone" dataKey="catC" stroke={NOTION_YELLOW} strokeWidth={2} dot={false} tension={0.4} />
+                      {/* Removed invalid 'tension' prop. type="monotone" provides smoothing. */}
+                      <Line type="monotone" dataKey="catA" stroke={NOTION_BLUE} strokeWidth={2} dot={false} />
+                      <Line type="monotone" dataKey="catB" stroke={NOTION_RED} strokeWidth={2} dot={false} />
+                      <Line type="monotone" dataKey="catC" stroke={NOTION_YELLOW} strokeWidth={2} dot={false} />
                    </LineChart>
                 </ResponsiveContainer>
              </div>
