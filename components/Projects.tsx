@@ -1,7 +1,7 @@
 import React from 'react';
 import { WEB3_PROJECTS, EXHIBITIONS } from '../constants';
-import { Facebook, Linkedin, FileText, Users, ArrowRight, Database, Bot, Globe, FileCheck } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { Database, Bot, Globe } from 'lucide-react';
 
 export const Projects: React.FC = () => {
   const { t } = useLanguage();
@@ -122,7 +122,7 @@ export const Projects: React.FC = () => {
                        
                        <div className="flex-1 rounded-xl overflow-hidden border border-[#ededeb] bg-white shadow-sm relative min-h-[400px]">
                           <iframe 
-                            src="/images/freecompress-EDM.pdf" 
+                            src="images/freecompress-EDM.pdf" 
                             title="eDM Case Study PDF"
                             className="w-full h-full"
                           />
@@ -220,7 +220,7 @@ export const Projects: React.FC = () => {
                        
                        <div className="flex-1 rounded-xl overflow-hidden border border-[#ededeb] bg-white shadow-sm relative min-h-[400px]">
                           <img 
-                            src="/images/Landing%20Page_1420x4000.png" 
+                            src="images/Landing%20Page_1420x4000.png" 
                             alt="Arabic eDM Localization" 
                             className="w-full h-full object-cover lg:object-top"
                           />
@@ -316,11 +316,11 @@ export const Projects: React.FC = () => {
                     {/* NEW Subheader Block with Icons (Moved Up) */}
                     <div className="flex flex-col items-center justify-center py-6 mb-10 border-b border-[#ededeb]">
                         <div className="flex items-center gap-8 md:gap-12 justify-center">
-                           <img src="/images/icons8-facebook-240.png" alt="Facebook" className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300" />
-                           <img src="/images/icons8-linkedin-240.png" alt="LinkedIn" className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300" />
-                           <img src="/images/icons8-tiktok-240.png" alt="TikTok" className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300" />
-                           <img src="/images/icons8-whatsapp-240.png" alt="WhatsApp" className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300" />
-                           <img src="/images/icons8-wordpress-240.png" alt="WordPress" className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300" />
+                           <img src="images/icons8-facebook-240.png" alt="Facebook" className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300" />
+                           <img src="images/icons8-linkedin-240.png" alt="LinkedIn" className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300" />
+                           <img src="images/icons8-tiktok-240.png" alt="TikTok" className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300" />
+                           <img src="images/icons8-whatsapp-240.png" alt="WhatsApp" className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300" />
+                           <img src="images/icons8-wordpress-240.png" alt="WordPress" className="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300" />
                         </div>
                     </div>
 
@@ -330,7 +330,7 @@ export const Projects: React.FC = () => {
                            className="w-full h-full object-cover" 
                            controls
                         >
-                          <source src="/images/freecompress-demo.mp4" type="video/mp4" />
+                          <source src="images/freecompress-demo.mp4" type="video/mp4" />
                           Your browser does not support the video tag.
                         </video>
                         <div className="absolute top-4 left-4 bg-white/90 backdrop-blur text-[#37352f] px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-sm z-10 flex items-center gap-2 pointer-events-none">
@@ -345,32 +345,32 @@ export const Projects: React.FC = () => {
                         <div className="flex flex-col gap-4">
                            {/* Img 1: 2700x1478 */}
                            <div className="w-full bg-[#F7F6F3] rounded-lg border border-[#ededeb] overflow-hidden relative group" style={{ aspectRatio: '2700/1478' }}>
-                              <img src="/images/KV%20Banner.png" alt="Digital Banner 1" className="w-full h-full object-cover" />
+                              <img src="images/KV%20Banner.png" alt="Digital Banner 1" className="w-full h-full object-cover" />
                               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/5 transition-opacity text-[10px] font-mono text-[#37352f]">2700 x 1478</div>
                            </div>
                            {/* Img 2: 1438x1198 */}
                            <div className="w-full bg-[#F7F6F3] rounded-lg border border-[#ededeb] overflow-hidden relative group" style={{ aspectRatio: '1438/1198' }}>
-                              <img src="/images/AD-Square.gif" alt="Digital Banner 2" className="w-full h-full object-cover" />
+                              <img src="images/AD-Square.gif" alt="Digital Banner 2" className="w-full h-full object-cover" />
                               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/5 transition-opacity text-[10px] font-mono text-[#37352f]">1438 x 1198</div>
                            </div>
                            {/* Img 3: 1536x400 */}
                            <div className="w-full bg-[#F7F6F3] rounded-lg border border-[#ededeb] overflow-hidden relative group" style={{ aspectRatio: '1536/400' }}>
-                              <img src="/images/Countdown%20Banner-1.gif" alt="Digital Banner 3" className="w-full h-full object-cover" />
+                              <img src="images/Countdown%20Banner-1.gif" alt="Digital Banner 3" className="w-full h-full object-cover" />
                               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/5 transition-opacity text-[10px] font-mono text-[#37352f]">1536 x 400</div>
                            </div>
                            {/* Img 4: 1536x400 */}
                            <div className="w-full bg-[#F7F6F3] rounded-lg border border-[#ededeb] overflow-hidden relative group" style={{ aspectRatio: '1536/400' }}>
-                              <img src="/images/Countdown%20Banner-2.gif" alt="Digital Banner 4" className="w-full h-full object-cover" />
+                              <img src="images/Countdown%20Banner-2.gif" alt="Digital Banner 4" className="w-full h-full object-cover" />
                               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/5 transition-opacity text-[10px] font-mono text-[#37352f]">1536 x 400</div>
                            </div>
                            {/* Img 5: 1536x400 */}
                            <div className="w-full bg-[#F7F6F3] rounded-lg border border-[#ededeb] overflow-hidden relative group" style={{ aspectRatio: '1536/400' }}>
-                              <img src="/images/Countdown%20Banner-3.gif" alt="Digital Banner 5" className="w-full h-full object-cover" />
+                              <img src="images/Countdown%20Banner-3.gif" alt="Digital Banner 5" className="w-full h-full object-cover" />
                               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/5 transition-opacity text-[10px] font-mono text-[#37352f]">1536 x 400</div>
                            </div>
                            {/* Img 6: 1536x400 */}
                            <div className="w-full bg-[#F7F6F3] rounded-lg border border-[#ededeb] overflow-hidden relative group" style={{ aspectRatio: '1536/400' }}>
-                              <img src="/images/Countdown%20Banner-4.gif" alt="Digital Banner 6" className="w-full h-full object-cover" />
+                              <img src="images/Countdown%20Banner-4.gif" alt="Digital Banner 6" className="w-full h-full object-cover" />
                               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/5 transition-opacity text-[10px] font-mono text-[#37352f]">1536 x 400</div>
                            </div>
                         </div>
@@ -379,17 +379,17 @@ export const Projects: React.FC = () => {
                         <div className="flex flex-col gap-4">
                            {/* Img 1: 1584x396 */}
                            <div className="w-full bg-[#F7F6F3] rounded-lg border border-[#ededeb] overflow-hidden relative group" style={{ aspectRatio: '1584/396' }}>
-                              <img src="/images/MKT%20Banner.png" alt="Digital Banner 7" className="w-full h-full object-cover" />
+                              <img src="images/MKT%20Banner.png" alt="Digital Banner 7" className="w-full h-full object-cover" />
                               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/5 transition-opacity text-[10px] font-mono text-[#37352f]">1584 x 396</div>
                            </div>
                            {/* Img 2: 728x91 */}
                            <div className="w-full bg-[#F7F6F3] rounded-lg border border-[#ededeb] overflow-hidden relative group" style={{ aspectRatio: '728/91' }}>
-                              <img src="/images/AD-Horizon.gif" alt="Digital Banner 8" className="w-full h-full object-cover" />
+                              <img src="images/AD-Horizon.gif" alt="Digital Banner 8" className="w-full h-full object-cover" />
                               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/5 transition-opacity text-[10px] font-mono text-[#37352f]">728 x 91</div>
                            </div>
                            {/* Img 3: 628x1200 */}
                            <div className="w-full bg-[#F7F6F3] rounded-lg border border-[#ededeb] overflow-hidden relative group" style={{ aspectRatio: '628/1200' }}>
-                              <img src="/images/AD-Vertical.png" alt="Digital Banner 9" className="w-full h-full object-cover" />
+                              <img src="images/AD-Vertical.png" alt="Digital Banner 9" className="w-full h-full object-cover" />
                               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/5 transition-opacity text-[10px] font-mono text-[#37352f]">628 x 1200</div>
                            </div>
                         </div>
