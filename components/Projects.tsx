@@ -219,10 +219,10 @@ export const Projects: React.FC = () => {
                        </div>
                        
                        <div className="flex-1 rounded-xl overflow-hidden border border-[#ededeb] bg-white shadow-sm relative min-h-[400px]">
-                          <img 
-                            src="images/Landing%20Page_1420x4000.png" 
-                            alt="Arabic eDM Localization" 
-                            className="w-full h-full object-cover lg:object-top"
+                          <iframe 
+                            src="images/Landing%20Page_1420x4000.pdf" 
+                            title="Arabic eDM Localization" 
+                            className="w-full h-full"
                           />
                        </div>
                        <p className="text-xs text-[#9B9A97] mt-3 text-center italic">{t.projects.case2.desc}</p>
