@@ -103,8 +103,8 @@ export const WEB3_PROJECTS = [
     category: "Platform Collaboration",
     title: "Platform Collaboration Strategy: The Sandbox × Yalla",
     description: "A strategic alliance analysis leveraging the voice-based social giant Yalla (39M+ users) for Metaverse expansion. Analyzed VARA policy entry, $34B UAE crypto trading growth, and synergy through 'Dubaiverse' localized scenes.",
-    imageUrl: "https://lh3.googleusercontent.com/d/1C89k7wuSwPhG_jYAxEsNG8tYbFAA0eiq",
-    infographicUrl: "https://lh3.googleusercontent.com/d/1-XiUdGJNy2ve1LlETgxJUNFM6I0BG1Lr",
+    imageUrl: "/images/Project%201.png",
+    infographicUrl: "/images/Project%201-Cooperative%20strategy%20between%20The%20SANDBOX%20&%20Yalla.png",
     infographicCredit: "Edited by Canva"
   },
   {
@@ -112,8 +112,8 @@ export const WEB3_PROJECTS = [
     category: "Go-to-Market Planning",
     title: "Exchange Market Strategy: Binance Case Project",
     description: "Deep-dive into global exchange leadership utilizing PESTEL/SWOT frameworks. Examined the $213M compliance investment progress, MiCA regulatory tightering, and ecosystem growth across BNB Chain and Trust Wallet.",
-    imageUrl: "https://lh3.googleusercontent.com/d/1IRVS3rtTiBIi7F0cKDiCVK4EhMBzYJss",
-    infographicUrl: "https://lh3.googleusercontent.com/d/1lNzje39ufWgOr_E1Jmc9L6x5lVruy85K",
+    imageUrl: "/images/Project%202.png",
+    infographicUrl: "/images/Project%202-Stategic%20Analysis%20and%20Recommendations%20for%20BINANCE.png",
     infographicCredit: "Edited by ChatGPT"
   },
   {
@@ -121,8 +121,8 @@ export const WEB3_PROJECTS = [
     category: "Market & Customer Research",
     title: "Research-Driven Strategy: UAE Women's Participation in Web3",
     description: "Evidence-based study on institutional and cultural drivers. Identified operational themes: policy awareness as a barrier-mitigator, program access, and the impact of family/social expectations on platform inclusiveness signals.",
-    imageUrl: "https://lh3.googleusercontent.com/d/1UEx2Dx5y39oK_h5lrtWH5TUVCLNNVGUI",
-    infographicUrl: "https://lh3.googleusercontent.com/d/1jL4bKwjIudHfuSJjScEBYCliJS8NkDnY",
+    imageUrl: "/images/Project%203.png",
+    infographicUrl: "/images/Project%203-Institutional%20and%20Cultural%20Drivers%20of%20Women's%20Participation%20in%20the%20UAE%20Web3%20Sector.png",
     infographicCredit: "Edited by AnyGen"
   }
 ];
@@ -134,7 +134,7 @@ export const EXHIBITIONS = [
     org: 'University of Birmingham (Dubai Campus)',
     languages: ['English', 'Chinese', 'Arabic'],
     roles: ['Event Support', 'On-site Operations'],
-    image: 'https://lh3.googleusercontent.com/d/1PXQVNjMjUkwj2BXX3qOIz6w4UqkKVFtO',
+    image: '/images/aib-mena-Header-Logo.png',
     imgPos: 'object-center',
     objFit: 'object-contain'
   },
@@ -144,7 +144,7 @@ export const EXHIBITIONS = [
     org: 'Consulate General of China in Dubai, UAE',
     languages: ['Chinese', 'English', 'Arabic'],
     roles: ['Event Support', 'Language Support', 'On-site Operations'],
-    image: 'https://lh3.googleusercontent.com/d/1xaCA2BB30d6CYo5IT4jBtIeyGXHCxT1y',
+    image: '/images/Consulate%20General%20of%20China%20in%20Dubai.jpg',
     imgPos: 'object-top'
   },
   {
@@ -153,7 +153,7 @@ export const EXHIBITIONS = [
     org: 'Huawei',
     languages: ['English', 'Chinese', 'Arabic'],
     roles: ['Event Support', 'On-site Operations', 'Language Support'],
-    image: 'https://lh3.googleusercontent.com/d/1vyik0sjTItcaBTAjXSoddou5pqHHbwxb',
+    image: '/images/Huawei.jpeg',
     imgPos: 'object-center',
     objFit: 'object-contain'
   },
@@ -163,7 +163,7 @@ export const EXHIBITIONS = [
     org: 'Herui Group',
     languages: ['Chinese', 'English'],
     roles: ['Event Support', 'Language Support'],
-    image: 'https://lh3.googleusercontent.com/d/1lCnszzpaC8LClXs2v9yxq6ZllgwtmVin',
+    image: '/images/Banner%202425.png',
     imgPos: 'object-top'
   }
 ];

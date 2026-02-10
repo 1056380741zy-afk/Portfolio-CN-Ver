@@ -8,10 +8,10 @@ const TOOLS = [
   // Design & Web
   { name: 'WordPress', icon: 'https://cdn.simpleicons.org/wordpress/21759b', category: 'Design & Web' },
   { name: 'Elementor', icon: 'https://cdn.simpleicons.org/elementor/92003B', category: 'Design & Web' },
-  { name: 'Canva', icon: 'https://lh3.googleusercontent.com/d/1yrsDCDWP2-UKeH9vSaXUsutjHzwp6Ean', category: 'Design & Web' },
+  { name: 'Canva', icon: '/images/canva-icon-logo-symbol_32329175.png', category: 'Design & Web' },
   { name: 'Figma', icon: 'https://cdn.simpleicons.org/figma/F24E1E', category: 'Design & Web' },
   { name: 'Illustrator', icon: 'https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg', category: 'Design & Web' },
-  { name: 'Dreamweaver', icon: 'https://lh3.googleusercontent.com/d/1MNb413OYMo9TFaot3U9IcnTIKgQaaYzD', category: 'Design & Web' },
+  { name: 'Dreamweaver', icon: '/images/Dreamweaver.png', category: 'Design & Web' },
   
   // Marketing & Ops
   { name: 'Stripo', icon: 'https://cdn.simpleicons.org/gmail/EA4335', category: 'Marketing' }, // Using Gmail style for Email Ops

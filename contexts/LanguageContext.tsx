@@ -107,6 +107,106 @@ export const translations = {
         }
       ]
     },
+    projects: {
+      title: "Selected Projects",
+      web3Title: "Web3 Market Strategy & Growth",
+      web3Projects: [
+        {
+          category: "Platform Collaboration",
+          title: "Platform Collaboration Strategy: The Sandbox × Yalla",
+          description: "A strategic alliance analysis leveraging the voice-based social giant Yalla (39M+ users) for Metaverse expansion. Analyzed VARA policy entry, $34B UAE crypto trading growth, and synergy through 'Dubaiverse' localized scenes.",
+          infographicCredit: "Edited by Canva"
+        },
+        {
+          category: "Go-to-Market Planning",
+          title: "Exchange Market Strategy: Binance Case Project",
+          description: "Deep-dive into global exchange leadership utilizing PESTEL/SWOT frameworks. Examined the $213M compliance investment progress, MiCA regulatory tightering, and ecosystem growth across BNB Chain and Trust Wallet.",
+          infographicCredit: "Edited by ChatGPT"
+        },
+        {
+          category: "Market & Customer Research",
+          title: "Research-Driven Strategy: UAE Women's Participation in Web3",
+          description: "Evidence-based study on institutional and cultural drivers. Identified operational themes: policy awareness as a barrier-mitigator, program access, and the impact of family/social expectations on platform inclusiveness signals.",
+          infographicCredit: "Edited by AnyGen"
+        }
+      ],
+      b2bTitle: "Global B2B Marketing Campaigns",
+      exhibitionTitle: "International Exhibition Campaigns: WATERTECH CHINA & WieTec",
+      channelStrategy: "Channel Strategy",
+      case1: {
+        tag: "CASE 1",
+        title: "EDM Optimization",
+        desc: "High-conversion eDM Design Case Study (PDF)",
+        taskTitle: "Task / Challenge",
+        taskDesc: "Achieve high-conversion eDM design under the constraint of highly redundant brand information.",
+        painPoint: "Stakeholders required excessive content per issue, with strict prohibitions on text reduction.",
+        limitation: "Avoid the risk of email clients blocking complex images and tables.",
+        actionTitle: "Action / Strategy",
+        actionDesc: "Implemented the following multi-dimensional optimizations:",
+        action1: "<strong class='text-[#37352f]'>Interaction & Layout:</strong> Restructured visual hierarchy using 'Limited Image + High-Frequency CTA' strategy, utilizing color blocks instead of large backgrounds.",
+        action2: "<strong class='text-[#37352f]'>Matrix Placement:</strong> Precisely embedded Website Links in all modules to shorten the path from viewing to conversion.",
+        action3: "<strong class='text-[#37352f]'>AI Empowerment:</strong> Established a 'Safe Master Template' and used AI to rapidly extend sub-versions for concurrent marketing.",
+        resultTitle: "Result / Effect",
+        deliverRate: "Deliver Rate",
+        openRate: "Open Rate",
+        ctr: "CTR",
+        impact: "<strong class='text-[#37352f]'>Conversion Impact:</strong> Effectively increased pre-registration CTR and sign-ups, with Google Analytics tracking step-wise growth in website traffic."
+      },
+      case2: {
+        tag: "CASE 2",
+        title: "EDM Localization",
+        desc: "RTL Adaptation & Cultural Localization",
+        taskTitle: "Task / Challenge",
+        taskDesc: "Cross-cultural visual reconstruction: Localization design for Arabic graphic content.",
+        difficulty: "Handle RTL (Right-to-Left) layout logic for the MENA market without altering the original design aesthetic.",
+        req: "Ensure text flow, visual focus, and interactive elements align with local reading habits.",
+        actionTitle: "Action / Strategy",
+        actionDesc: "Agile Design Support & RTL Adaptation Scheme:",
+        action1: "<strong class='text-[#37352f]'>Tool Synergy:</strong> Flexibly utilized Canva and professional tools for secondary creation, strictly following brand visual guidelines.",
+        action2: "<strong class='text-[#37352f]'>Localized Visual Calibration:</strong> Mirrored visual layouts to ensure CTAs, icons, and information flow perfectly match the intuition of native Arabic speakers.",
+        resultTitle: "Result / Effect",
+        impactTitle: "Regional Coverage Expansion & Private Domain Conversion",
+        impact1: "<strong class='text-[#37352f]'>Market Coverage:</strong> Successfully achieved deep coverage of brand materials in the MENA region, eliminating language and cultural barriers.",
+        impact2: "<strong class='text-[#37352f]'>Channel Activation:</strong> Significantly boosted website traffic and real-time inquiry response rates on social channels like <strong class='text-[#166534]'>WhatsApp</strong>."
+      },
+      digitalMatrix: {
+        title: "Digital & Social Matrix",
+        subtitle: "Content Marketing (Social Media & Website)",
+        featuredVideo: "Featured Video"
+      },
+      performance: {
+        title: "Overall Performance Impact",
+        opsTitle: "Operational Excellence & Process Architecture",
+        cards: [
+          { title: "CMS Mastery", desc: "Standardized WordPress & Elementor workflows to ensure design consistency." },
+          { title: "Digital Automation", desc: "AI-driven workflows for multi-channel EDM & Social Media content." },
+          { title: "MENA Operations", desc: "Protocols for WhatsApp Private Domain & Visa Approval workflows." }
+        ],
+        funnelTitle: "Conversion Funnel Analysis",
+        funnelStat: "Pre-registrations (+45.6% YoY)",
+        funnelDesc: "leading to a <span class='text-[#0B6E99] underline decoration-2 underline-offset-4 decoration-[#DDEBF1]'>40.6% Show-up Rate</span>.",
+        funnelFooter: "Shifting from volume-based traffic to quality-focused retention.",
+        authorityTitle: "Purchasing Authority",
+        authorityStat: "Decision Makers",
+        authorityFooter: "& Joint Decision Makers",
+        roiTitle: "Channel ROI Attribution",
+        menaTitle: "Strategic MENA Impact",
+        menaDesc: "Addressing <span class='text-[#6940A5] bg-[#EAE4F2] px-1 rounded'>35.79%</span> of Exhibitor demand for Middle East expansion.",
+        menaPoolTitle: "VIP Matchmaking Pool",
+        menaPoolDesc: "Saudi & UAE buyers account for <span class='text-[#37352f] font-black'>8%</span> of the total high-value pool."
+      },
+      activationTitle: "Regional Market Activation",
+      activation: {
+        lang: "Languages",
+        role: "Role"
+      },
+      exhibitions: {
+        e1: { name: '12th AIB-MENA Conference 2024', org: 'University of Birmingham (Dubai Campus)', roles: ['Event Support', 'On-site Operations'] },
+        e2: { name: 'Encounter among Blossoms – The Elegant Gathering of the Song Dynasty', org: 'Consulate General of China in Dubai, UAE', roles: ['Event Support', 'Language Support', 'On-site Operations'] },
+        e3: { name: 'Power the Digital Era Forward - Global Data Center Facility Summit 2025 (Dubai)', org: 'Huawei', roles: ['Event Support', 'On-site Operations', 'Language Support'] },
+        e4: { name: 'WieTec & WATERTECH CHINA 2024/2025', org: 'Herui Group', roles: ['Event Support', 'Language Support'] }
+      }
+    },
     skills: {
       title: "Skills & Tools",
       toolsTitle: "Tools & Software",
@@ -238,6 +338,106 @@ export const translations = {
           icon: "GraduationCap"
         }
       ]
+    },
+    projects: {
+      title: "项目案例",
+      web3Title: "Web3 市场战略与增长",
+      web3Projects: [
+        {
+          category: "平台合作",
+          title: "平台合作策略：The Sandbox × Yalla",
+          description: "针对语音社交巨头 Yalla（3900万+用户）进军元宇宙的战略联盟分析。分析了 VARA 政策准入、阿联酋 340 亿美元的加密交易增长，以及通过“Dubaiverse”本地化场景实现的协同效应。",
+          infographicCredit: "由 Canva 编辑"
+        },
+        {
+          category: "市场进入规划 (GTM)",
+          title: "交易所市场策略：币安案例项目",
+          description: "利用 PESTEL/SWOT 框架深入剖析全球交易所龙头的市场策略。审视了其 2.13 亿美元的合规投资进展、MiCA 监管紧缩下的应对，以及 BNB Chain 和 Trust Wallet 的生态增长。",
+          infographicCredit: "由 ChatGPT 编辑"
+        },
+        {
+          category: "市场与客户调研",
+          title: "研究驱动策略：阿联酋女性在 Web3 的参与度",
+          description: "基于证据的体制与文化驱动因素研究。确定了关键运营主题：作为障碍缓解因素的政策认知、项目准入渠道，以及家庭/社会期望对平台包容性信号的影响。",
+          infographicCredit: "由 AnyGen 编辑"
+        }
+      ],
+      b2bTitle: "全球 B2B 营销战役",
+      exhibitionTitle: "国际展会营销：上海国际水展 (WATERTECH CHINA) & 世环会 (WieTec)",
+      channelStrategy: "渠道策略",
+      case1: {
+        tag: "案例 1",
+        title: "EDM 邮件优化",
+        desc: "高转化 EDM 设计案例研究 (PDF)",
+        taskTitle: "任务 / 挑战",
+        taskDesc: "在品牌信息高度冗余的限制下，实现高转化的 EDM 设计。",
+        painPoint: "在高文本量且要求不对文字做删减的情况下进行图文排版",
+        limitation: "避免复杂的图片和表格被邮件客户端拦截的风险。",
+        actionTitle: "行动 / 策略",
+        actionDesc: "实施了以下多维度优化：",
+        action1: "<strong class='text-[#37352f]'>交互与布局：</strong> 重构视觉层级，采用“少图 + 高频 CTA”策略，利用色块代替大背景图。",
+        action2: "<strong class='text-[#37352f]'>矩阵布局：</strong> 在所有模块中精准植入官网链接，缩短从浏览到转化的路径。",
+        action3: "<strong class='text-[#37352f]'>AI 赋能：</strong> 建立“安全母版”，利用 AI 快速延展子版本以支持并发营销。",
+        resultTitle: "结果 / 成效",
+        deliverRate: "送达率",
+        openRate: "打开率",
+        ctr: "点击率",
+        impact: "<strong class='text-[#37352f]'>转化影响：</strong> 有效提升了预登记点击率和注册量，Google Analytics 追踪到网站流量的阶梯式增长。"
+      },
+      case2: {
+        tag: "案例 2",
+        title: "EDM 本地化",
+        desc: "RTL 适配与文化本地化",
+        taskTitle: "任务 / 挑战",
+        taskDesc: "跨文化视觉重构：阿拉伯语图文内容的本地化设计。",
+        difficulty: "在不改变原有设计美感的前提下，处理针对 MENA 市场的 RTL（从右至左）排版逻辑。",
+        req: "确保文本流、视觉焦点和交互元素符合当地阅读习惯。",
+        actionTitle: "行动 / 策略",
+        actionDesc: "敏捷设计支持与 RTL 适配方案：",
+        action1: "<strong class='text-[#37352f]'>工具协同：</strong> 灵活运用 Canva 和专业工具进行二次创作，严格遵循品牌视觉规范。",
+        action2: "<strong class='text-[#37352f]'>本地化视觉校准：</strong> 镜像翻转视觉布局，确保 CTA、图标和信息流完美契合阿拉伯语母语者的直觉。",
+        resultTitle: "结果 / 成效",
+        impactTitle: "区域覆盖扩展与私域转化",
+        impact1: "<strong class='text-[#37352f]'>市场覆盖：</strong> 成功实现了品牌物料在 MENA 地区的深度覆盖，消除了语言和文化障碍。",
+        impact2: "<strong class='text-[#37352f]'>渠道激活：</strong> 显著提升了网站流量以及 <strong class='text-[#166534]'>WhatsApp</strong> 等社交渠道的实时询盘响应率。"
+      },
+      digitalMatrix: {
+        title: "数字与社交矩阵",
+        subtitle: "内容营销（社交媒体与网站）",
+        featuredVideo: "精选视频"
+      },
+      performance: {
+        title: "整体绩效影响力",
+        opsTitle: "卓越运营与流程架构",
+        cards: [
+          { title: "CMS 精通", desc: "标准化 WordPress & Elementor 工作流，确保设计一致性。" },
+          { title: "数字化自动化", desc: "AI 驱动的多渠道 EDM 和社交媒体内容工作流。" },
+          { title: "MENA 运营", desc: "WhatsApp 私域管理及签证审批工作流协议。" }
+        ],
+        funnelTitle: "转化漏斗分析",
+        funnelStat: "预登记 (+45.6% 同比增长)",
+        funnelDesc: "带来了 <span class='text-[#0B6E99] underline decoration-2 underline-offset-4 decoration-[#DDEBF1]'>40.6% 的到场率</span>。",
+        funnelFooter: "从基于流量的规模增长转向注重质量的用户留存。",
+        authorityTitle: "采购决策权",
+        authorityStat: "决策者",
+        authorityFooter: "及共同决策者",
+        roiTitle: "渠道 ROI 归因",
+        menaTitle: "战略性 MENA 影响力",
+        menaDesc: "响应了 <span class='text-[#6940A5] bg-[#EAE4F2] px-1 rounded'>35.79%</span> 展商的中东扩张需求。",
+        menaPoolTitle: "VIP 配对池",
+        menaPoolDesc: "沙特和阿联酋买家占高价值总池的 <span class='text-[#37352f] font-black'>8%</span>。"
+      },
+      activationTitle: "区域市场活动落地",
+      activation: {
+        lang: "语言",
+        role: "角色"
+      },
+      exhibitions: {
+        e1: { name: '第12届 AIB-MENA 会议 2024', org: '伯明翰大学（迪拜校区）', roles: ['会议支持', '现场运营'] },
+        e2: { name: '花间相遇——宋代雅集', org: '中国驻迪拜总领事馆', roles: ['活动支持', '语言支持', '现场运营'] },
+        e3: { name: '点亮数字时代——2025华为全球数据中心设施峰会（迪拜）', org: '华为', roles: ['活动支持', '现场运营', '语言支持'] },
+        e4: { name: 'WieTec & WATERTECH CHINA 2024/2025', org: '荷瑞集团', roles: ['活动支持', '语言支持'] }
+      }
     },
     skills: {
       title: "技能与工具",
