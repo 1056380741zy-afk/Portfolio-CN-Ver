@@ -35,9 +35,9 @@ const DEMAND_DATA = [
 ];
 
 const MENA_DATA = [
-  { year: '2022', value: 3, fill: '#DDEBF1' }, // Lightest
-  { year: '2023', value: 7, fill: '#85B8E8' }, // Medium
-  { year: '2024', value: 11, fill: '#2383E2' }, // Darkest (Main Blue)
+  { year: '2023', value: 3, fill: '#DDEBF1' }, // Lightest
+  { year: '2024', value: 7, fill: '#85B8E8' }, // Medium
+  { year: '2025', value: 11, fill: '#2383E2' }, // Darkest (Main Blue)
 ];
 
 const CustomTooltip = ({ active, payload, label }: any) => {
