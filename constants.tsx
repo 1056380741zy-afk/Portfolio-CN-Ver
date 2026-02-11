@@ -105,7 +105,13 @@ export const WEB3_PROJECTS = [
     description: "A strategic alliance analysis leveraging the voice-based social giant Yalla (39M+ users) for Metaverse expansion. Analyzed VARA policy entry, $34B UAE crypto trading growth, and synergy through 'Dubaiverse' localized scenes.",
     imageUrl: "images/Project%201-Cooperative%20strategy%20between%20The%20SANDBOX%20%26%20Yalla.png",
     infographicUrl: "images/Project%201.png",
-    infographicCredit: "Edited by Canva"
+    infographicCredit: "Edited by Canva",
+    insights: [
+      "VARA Policy Entry Strategy",
+      "Yalla Key Data Analysis",
+      "Metaverse Synergy Value",
+      "Action Path: NFT Issuance"
+    ]
   },
   {
     id: "binance-strategy",
@@ -114,7 +120,13 @@ export const WEB3_PROJECTS = [
     description: "Deep-dive into global exchange leadership utilizing PESTEL/SWOT frameworks. Examined the $213M compliance investment progress, MiCA regulatory tightering, and ecosystem growth across BNB Chain and Trust Wallet.",
     imageUrl: "images/Project%202-Stategic%20Analysis%20and%20Recommendations%20for%20BINANCE.png",
     infographicUrl: "images/Project%202.png",
-    infographicCredit: "Edited by ChatGPT"
+    infographicCredit: "Edited by ChatGPT",
+    insights: [
+      "PESTEL External Analysis",
+      "SWOT Internal Analysis",
+      "Compliance & MiCA Mapping",
+      "2024 Expansion Progress"
+    ]
   },
   {
     id: "women-web3-uae",
@@ -123,7 +135,13 @@ export const WEB3_PROJECTS = [
     description: "Evidence-based study on institutional and cultural drivers. Identified operational themes: policy awareness as a barrier-mitigator, program access, and the impact of family/social expectations on platform inclusiveness signals.",
     imageUrl: "images/Project%203-Institutional%20and%20Cultural%20Drivers%20of%20Women%27s%20Participation%20in%20the%20UAE%20Web3%20Sector.png",
     infographicUrl: "images/Project%203.png",
-    infographicCredit: "Edited by AnyGen"
+    infographicCredit: "Edited by AnyGen",
+    insights: [
+      "Empirical Survey & Interviews",
+      "Institutional Mechanisms",
+      "Operational Themes",
+      "Inclusiveness Signals"
+    ]
   }
 ];
 

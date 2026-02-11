@@ -1,18 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { WEB3_PROJECTS, EXHIBITIONS } from '../constants';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Database, Bot, Globe } from 'lucide-react';
+import { Database, Bot, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
 import { PerformanceDashboard } from './PerformanceDashboard';
 
 export const Projects: React.FC = () => {
   const { t } = useLanguage();
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev === WEB3_PROJECTS.length - 1 ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? WEB3_PROJECTS.length - 1 : prev - 1));
+  };
 
   return (
     <section id="projects" className="py-20 px-6 max-w-7xl mx-auto">
       <div>
         <h2 className="text-3xl font-bold mb-16 text-[#37352f] uppercase">{t.projects.title}</h2>
 
-        {/* Part A: Web3 Market Strategy */}
+        {/* Part A: Web3 Market Strategy (Carousel) */}
         <div className="mb-32">
           {/* Section Header */}
           <div className="flex items-center gap-4 mb-12">
@@ -22,63 +31,89 @@ export const Projects: React.FC = () => {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {WEB3_PROJECTS.map((project, index) => {
-              // Get translation if available, otherwise fallback to default project text
-              const translatedProject = t.projects.web3Projects?.[index] || project;
-              
-              return (
-              <div 
-                key={project.id} 
-                className="group bg-white border border-[#ededeb] rounded-[2.5rem] overflow-hidden hover:shadow-2xl transition-all duration-500 flex flex-col"
-                style={{ transitionDelay: `${index * 150}ms` }}
-              >
-                {/* Cover Image (Top) */}
-                <div className="w-full aspect-video bg-[#F7F6F3] flex items-center justify-center overflow-hidden p-8">
-                  <img 
-                    src={project.imageUrl} 
-                    alt={translatedProject.title} 
-                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
-
-                {/* Content Body (Middle) */}
-                <div className="p-8 flex flex-col flex-1">
-                  <div className="mb-4">
-                     <span className="inline-block px-3 py-1 bg-[#EAE4F2] text-[#6940A5] text-[10px] font-bold uppercase rounded-full tracking-wider">
-                       {translatedProject.category}
-                     </span>
-                  </div>
-                  
-                  <h4 className="text-2xl font-black text-[#37352f] mb-4 leading-tight">
-                    {translatedProject.title.split(':')[0]}
-                  </h4>
-                  
-                  <p className="text-[#9B9A97] text-sm leading-relaxed mb-8 flex-1">
-                    {translatedProject.description}
-                  </p>
-
-                  {/* Footer (Bottom) */}
-                  <div className="pt-8 border-t border-[#f1f1f0] w-full">
-                    <div className="text-[10px] font-bold text-[#37352f]/40 uppercase tracking-widest mb-4">
-                      INFOGRAPHIC ANALYSIS
-                    </div>
-                    <div className="w-full aspect-[9/16] rounded-[2rem] overflow-hidden border border-[#ededeb] relative bg-[#faf9f6]">
-                       <img 
-                         src={project.infographicUrl} 
-                         alt="Infographic Analysis" 
-                         className="w-full h-full object-cover"
-                       />
-                    </div>
-                    {translatedProject.infographicCredit && (
-                       <div className="mt-2 text-[10px] text-[#9B9A97] text-right italic font-medium">
-                         {translatedProject.infographicCredit}
+          <div className="relative group">
+            {/* Carousel Track */}
+            <div className="overflow-hidden rounded-[2.5rem] border border-[#ededeb] bg-white shadow-sm">
+                <div 
+                  className="flex transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]"
+                  style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                >
+                   {WEB3_PROJECTS.map((project, index) => {
+                       const translatedProject = t.projects.web3Projects?.[index] || project;
+                       return (
+                       <div key={project.id} className="w-full flex-shrink-0 flex flex-col lg:flex-row min-h-[600px]">
+                           {/* Left Column (Content) */}
+                           <div className="w-full lg:w-5/12 p-8 md:p-12 flex flex-col border-b lg:border-b-0 lg:border-r border-[#ededeb] overflow-y-auto max-h-[600px] lg:max-h-none">
+                              {/* Banner (Top Image) */}
+                              <div className="w-full h-48 rounded-2xl overflow-hidden mb-8 border border-[#ededeb] bg-[#F7F6F3]">
+                                 <img src={project.imageUrl} alt="Banner" className="w-full h-full object-contain p-4" />
+                              </div>
+                              
+                              {/* Attribute */}
+                              <div className="mb-4">
+                                  <span className="inline-block px-3 py-1 bg-[#EAE4F2] text-[#6940A5] text-[10px] font-bold uppercase rounded-full tracking-wider">
+                                     {translatedProject.category}
+                                  </span>
+                              </div>
+                              
+                              {/* Name (Title) */}
+                              <h3 className="text-2xl md:text-3xl font-black text-[#37352f] mb-4 leading-tight">
+                                {translatedProject.title.split(':')[0]}
+                              </h3>
+                              
+                              {/* Introduction (Description) */}
+                              <p className="text-[#37352f] text-sm md:text-base leading-relaxed mb-8 font-medium">
+                                {translatedProject.description}
+                              </p>
+                              
+                              {/* Case Insights */}
+                              <div className="mt-auto bg-[#F7F6F3] p-5 rounded-2xl border border-[#ededeb]">
+                                  <h4 className="text-[10px] font-bold text-[#9B9A97] uppercase tracking-widest mb-4 flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#6940A5]"></span> Case Insights
+                                  </h4>
+                                  <div className="flex flex-wrap gap-2">
+                                     {translatedProject.insights?.map((insight: string) => (
+                                        <span key={insight} className="px-3 py-1.5 bg-white border border-[#e1e1e1] rounded-lg text-xs text-[#37352f] font-semibold shadow-sm hover:border-[#d3d1cb] transition-colors cursor-default">
+                                          {insight}
+                                        </span>
+                                     ))}
+                                  </div>
+                              </div>
+                           </div>
+                           
+                           {/* Right Column (Infographic) */}
+                           <div className="w-full lg:w-7/12 bg-[#faf9f6] relative flex flex-col min-h-[400px] lg:min-h-full">
+                               <div className="flex-1 p-8 md:p-12 flex items-center justify-center">
+                                  <img 
+                                    src={project.infographicUrl} 
+                                    alt="Infographic Analysis"
+                                    className="w-full h-full object-contain rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#ededeb] bg-white" 
+                                  />
+                               </div>
+                               <div className="absolute bottom-4 right-6 text-[10px] text-[#9B9A97] italic font-medium">
+                                  {translatedProject.infographicCredit}
+                               </div>
+                           </div>
                        </div>
-                    )}
-                  </div>
+                   )})}
                 </div>
-              </div>
-            )})}
+            </div>
+
+            {/* Carousel Controls */}
+            <button 
+              onClick={prevSlide} 
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white border border-[#ededeb] rounded-full flex items-center justify-center shadow-lg text-[#37352f] hover:bg-[#F7F6F3] hover:scale-110 z-10 transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100"
+              aria-label="Previous Slide"
+            >
+                <ChevronLeft size={24} strokeWidth={1.5} />
+            </button>
+            <button 
+              onClick={nextSlide} 
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white border border-[#ededeb] rounded-full flex items-center justify-center shadow-lg text-[#37352f] hover:bg-[#F7F6F3] hover:scale-110 z-10 transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100"
+              aria-label="Next Slide"
+            >
+                <ChevronRight size={24} strokeWidth={1.5} />
+            </button>
           </div>
         </div>
 

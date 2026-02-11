@@ -115,19 +115,22 @@ export const translations = {
           category: "Platform Collaboration",
           title: "Platform Collaboration Strategy: The Sandbox × Yalla",
           description: "A strategic alliance analysis leveraging the voice-based social giant Yalla (39M+ users) for Metaverse expansion. Analyzed VARA policy entry, $34B UAE crypto trading growth, and synergy through 'Dubaiverse' localized scenes.",
-          infographicCredit: "Edited by Canva"
+          infographicCredit: "Edited by Canva",
+          insights: ["VARA Policy Entry Strategy", "Yalla Key Data Analysis", "Metaverse Synergy Value", "Action Path: NFT Issuance"]
         },
         {
           category: "Go-to-Market Planning",
           title: "Exchange Market Strategy: Binance Case Project",
           description: "Deep-dive into global exchange leadership utilizing PESTEL/SWOT frameworks. Examined the $213M compliance investment progress, MiCA regulatory tightering, and ecosystem growth across BNB Chain and Trust Wallet.",
-          infographicCredit: "Edited by ChatGPT"
+          infographicCredit: "Edited by ChatGPT",
+          insights: ["PESTEL External Analysis", "SWOT Internal Analysis", "Compliance & MiCA Mapping", "2024 Expansion Progress"]
         },
         {
           category: "Market & Customer Research",
           title: "Research-Driven Strategy: UAE Women's Participation in Web3",
           description: "Evidence-based study on institutional and cultural drivers. Identified operational themes: policy awareness as a barrier-mitigator, program access, and the impact of family/social expectations on platform inclusiveness signals.",
-          infographicCredit: "Edited by AnyGen"
+          infographicCredit: "Edited by AnyGen",
+          insights: ["Empirical Survey & Interviews", "Institutional Mechanisms", "Operational Themes", "Inclusiveness Signals"]
         }
       ],
       b2bTitle: "Global B2B Marketing Campaigns",
@@ -206,7 +209,7 @@ export const translations = {
         e1: { name: '12th AIB-MENA Conference 2024', org: 'University of Birmingham (Dubai Campus)', roles: ['Event Support', 'On-site Operations'] },
         e2: { name: 'Encounter among Blossoms – The Elegant Gathering of the Song Dynasty', org: 'Consulate General of China in Dubai, UAE', roles: ['Event Support', 'Language Support', 'On-site Operations'] },
         e3: { name: 'Power the Digital Era Forward - Global Data Center Facility Summit 2025 (Dubai)', org: 'Huawei', roles: ['Event Support', 'On-site Operations', 'Language Support'] },
-        e4: { name: 'WieTec & WATERTECH CHINA 2024/2025', org: 'Herui Group', roles: ['Event Support', 'Language Support'] }
+        e4: { name: 'WieTec & WATERTECH CHINA 2024/2025', org: '荷瑞集团', roles: ['Event Support', 'Language Support'] }
       }
     },
     skills: {
@@ -349,19 +352,22 @@ export const translations = {
           category: "平台合作",
           title: "平台合作策略：The Sandbox × Yalla",
           description: "针对语音社交巨头 Yalla（3900万+用户）进军元宇宙的战略联盟分析。分析了 VARA 政策准入、阿联酋 340 亿美元的加密交易增长，以及通过“Dubaiverse”本地化场景实现的协同效应。",
-          infographicCredit: "由 Canva 编辑"
+          infographicCredit: "由 Canva 编辑",
+          insights: ["VARA 政策准入策略", "Yalla 关键数据分析", "元宇宙协同价值", "行动路径：NFT 发行"]
         },
         {
           category: "市场进入规划 (GTM)",
           title: "交易所市场策略：币安案例项目",
           description: "利用 PESTEL/SWOT 框架深入剖析全球交易所龙头的市场策略。审视了其 2.13 亿美元的合规投资进展、MiCA 监管紧缩下的应对，以及 BNB Chain 和 Trust Wallet 的生态增长。",
-          infographicCredit: "由 ChatGPT 编辑"
+          infographicCredit: "由 ChatGPT 编辑",
+          insights: ["PESTEL 外部环境分析", "SWOT 内部优势分析", "合规与 MiCA 映射", "2024 扩张进程"]
         },
         {
           category: "市场与客户调研",
           title: "研究驱动策略：阿联酋女性在 Web3 的参与度",
           description: "基于证据的体制与文化驱动因素研究。确定了关键运营主题：作为障碍缓解因素的政策认知、项目准入渠道，以及家庭/社会期望对平台包容性信号的影响。",
-          infographicCredit: "由 AnyGen 编辑"
+          infographicCredit: "由 AnyGen 编辑",
+          insights: ["实证调查与访谈", "制度机制分析", "运营主题洞察", "包容性信号研究"]
         }
       ],
       b2bTitle: "全球 B2B 营销战役",
