@@ -33,7 +33,7 @@ export const Projects: React.FC = () => {
 
           <div className="relative group">
             {/* Carousel Track */}
-            <div className="overflow-hidden rounded-[2.5rem] border border-[#ededeb] bg-white shadow-sm">
+            <div className="overflow-hidden rounded-[2rem] border border-[#ededeb] bg-white shadow-sm">
                 <div 
                   className="flex transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]"
                   style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -43,37 +43,37 @@ export const Projects: React.FC = () => {
                        return (
                        <div key={project.id} className="w-full flex-shrink-0 flex flex-col lg:flex-row min-h-[600px]">
                            {/* Left Column (Content) */}
-                           <div className="w-full lg:w-5/12 p-8 md:p-12 flex flex-col border-b lg:border-b-0 lg:border-r border-[#ededeb] overflow-y-auto max-h-[600px] lg:max-h-none">
-                              {/* Banner (Top Image) */}
-                              <div className="w-full h-48 rounded-2xl overflow-hidden mb-8 border border-[#ededeb] bg-[#F7F6F3]">
-                                 <img src={project.imageUrl} alt="Banner" className="w-full h-full object-contain p-4" />
+                           <div className="w-full lg:w-5/12 p-6 md:p-8 flex flex-col border-b lg:border-b-0 lg:border-r border-[#ededeb] overflow-y-auto max-h-[600px] lg:max-h-[700px]">
+                              {/* Banner (Top Image) - 16:9 Aspect Ratio */}
+                              <div className="w-full aspect-video rounded-xl overflow-hidden mb-6 border border-[#ededeb] bg-[#F7F6F3] shadow-sm relative">
+                                 <img src={project.imageUrl} alt="Banner" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                               </div>
                               
                               {/* Attribute */}
-                              <div className="mb-4">
-                                  <span className="inline-block px-3 py-1 bg-[#EAE4F2] text-[#6940A5] text-[10px] font-bold uppercase rounded-full tracking-wider">
+                              <div className="mb-3">
+                                  <span className="inline-block px-2.5 py-1 bg-[#EAE4F2] text-[#6940A5] text-[10px] font-bold uppercase rounded-full tracking-wider">
                                      {translatedProject.category}
                                   </span>
                               </div>
                               
                               {/* Name (Title) */}
-                              <h3 className="text-2xl md:text-3xl font-black text-[#37352f] mb-4 leading-tight">
+                              <h3 className="text-xl md:text-2xl font-black text-[#37352f] mb-3 leading-tight">
                                 {translatedProject.title.split(':')[0]}
                               </h3>
                               
                               {/* Introduction (Description) */}
-                              <p className="text-[#37352f] text-sm md:text-base leading-relaxed mb-8 font-medium">
+                              <p className="text-[#37352f] text-sm leading-relaxed mb-6 font-medium">
                                 {translatedProject.description}
                               </p>
                               
                               {/* Case Insights */}
-                              <div className="mt-auto bg-[#F7F6F3] p-5 rounded-2xl border border-[#ededeb]">
-                                  <h4 className="text-[10px] font-bold text-[#9B9A97] uppercase tracking-widest mb-4 flex items-center gap-2">
+                              <div className="mt-auto bg-[#F7F6F3] p-4 rounded-xl border border-[#ededeb]">
+                                  <h4 className="text-[10px] font-bold text-[#9B9A97] uppercase tracking-widest mb-3 flex items-center gap-2">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#6940A5]"></span> Case Insights
                                   </h4>
                                   <div className="flex flex-wrap gap-2">
                                      {translatedProject.insights?.map((insight: string) => (
-                                        <span key={insight} className="px-3 py-1.5 bg-white border border-[#e1e1e1] rounded-lg text-xs text-[#37352f] font-semibold shadow-sm hover:border-[#d3d1cb] transition-colors cursor-default">
+                                        <span key={insight} className="px-2.5 py-1 bg-white border border-[#e1e1e1] rounded-lg text-[11px] text-[#37352f] font-semibold shadow-sm hover:border-[#d3d1cb] transition-colors cursor-default">
                                           {insight}
                                         </span>
                                      ))}
@@ -81,16 +81,16 @@ export const Projects: React.FC = () => {
                               </div>
                            </div>
                            
-                           {/* Right Column (Infographic) */}
-                           <div className="w-full lg:w-7/12 bg-[#faf9f6] relative flex flex-col min-h-[400px] lg:min-h-full">
-                               <div className="flex-1 p-8 md:p-12 flex items-center justify-center">
+                           {/* Right Column (Infographic) - 9:16 Aspect Ratio Consideration */}
+                           <div className="w-full lg:w-7/12 bg-[#faf9f6] relative flex flex-col min-h-[500px] lg:min-h-full">
+                               <div className="flex-1 p-6 md:p-8 flex items-center justify-center">
                                   <img 
                                     src={project.infographicUrl} 
                                     alt="Infographic Analysis"
-                                    className="w-full h-full object-contain rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#ededeb] bg-white" 
+                                    className="w-full h-full object-contain max-h-[700px] rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#ededeb] bg-white" 
                                   />
                                </div>
-                               <div className="absolute bottom-4 right-6 text-[10px] text-[#9B9A97] italic font-medium">
+                               <div className="absolute bottom-3 right-5 text-[10px] text-[#9B9A97] italic font-medium">
                                   {translatedProject.infographicCredit}
                                </div>
                            </div>
@@ -102,17 +102,17 @@ export const Projects: React.FC = () => {
             {/* Carousel Controls */}
             <button 
               onClick={prevSlide} 
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white border border-[#ededeb] rounded-full flex items-center justify-center shadow-lg text-[#37352f] hover:bg-[#F7F6F3] hover:scale-110 z-10 transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100"
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white border border-[#ededeb] rounded-full flex items-center justify-center shadow-lg text-[#37352f] hover:bg-[#F7F6F3] hover:scale-110 z-10 transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100"
               aria-label="Previous Slide"
             >
-                <ChevronLeft size={24} strokeWidth={1.5} />
+                <ChevronLeft size={20} strokeWidth={1.5} />
             </button>
             <button 
               onClick={nextSlide} 
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white border border-[#ededeb] rounded-full flex items-center justify-center shadow-lg text-[#37352f] hover:bg-[#F7F6F3] hover:scale-110 z-10 transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100"
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white border border-[#ededeb] rounded-full flex items-center justify-center shadow-lg text-[#37352f] hover:bg-[#F7F6F3] hover:scale-110 z-10 transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100"
               aria-label="Next Slide"
             >
-                <ChevronRight size={24} strokeWidth={1.5} />
+                <ChevronRight size={20} strokeWidth={1.5} />
             </button>
           </div>
         </div>
