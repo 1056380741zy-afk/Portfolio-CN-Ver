@@ -21,12 +21,6 @@ const REACH_DATA = [
   { month: 'Jun', val23: 2500, val24: 4714 }, // Peak
 ];
 
-const AUDIENCE_DATA = [
-  { name: 'Procurement', value: 76, color: NOTION_BLUE },
-  { name: 'Engineering', value: 15, color: NOTION_GRAY },
-  { name: 'Others', value: 9, color: NOTION_GRAY },
-];
-
 const DEMAND_DATA = [
   { name: '2022', catA: 30, catB: 20, catC: 10 },
   { name: '2023', catA: 45, catB: 25, catC: 15 },
@@ -91,6 +85,13 @@ export const PerformanceDashboard: React.FC = () => {
       icon: <TrendingUp size={18} className="text-[#0F7B6C]" />,
       bg: "bg-[#DDEDEA]" 
     },
+  ];
+
+  // Constructed dynamically to use translation
+  const AUDIENCE_DATA = [
+    { name: t.projects.performance.dashboard.procurement, value: 76, color: NOTION_BLUE },
+    { name: t.projects.performance.dashboard.engineering, value: 15, color: NOTION_GRAY },
+    { name: t.projects.performance.dashboard.others, value: 9, color: NOTION_GRAY },
   ];
 
   return (
@@ -205,6 +206,9 @@ export const PerformanceDashboard: React.FC = () => {
                    <span className="w-2 h-2 rounded-full bg-[#2383E2]"></span> {t.projects.performance.dashboard.procurement}
                 </div>
                 <div className="flex items-center gap-1.5 text-xs text-[#787774]">
+                   <span className="w-2 h-2 rounded-full bg-[#E1E1E1]"></span> {t.projects.performance.dashboard.engineering}
+                </div>
+                <div className="flex items-center gap-1.5 text-xs text-[#787774]">
                    <span className="w-2 h-2 rounded-full bg-[#E1E1E1]"></span> {t.projects.performance.dashboard.others}
                 </div>
              </div>
@@ -222,7 +226,6 @@ export const PerformanceDashboard: React.FC = () => {
                       <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f0f0f0" />
                       <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fontSize: 12, fill: '#9B9A97'}} dy={10} />
                       <Tooltip content={<CustomTooltip />} />
-                      {/* Removed invalid 'tension' prop. type="monotone" provides smoothing. */}
                       <Line type="monotone" dataKey="catA" stroke={NOTION_BLUE} strokeWidth={2} dot={false} />
                       <Line type="monotone" dataKey="catB" stroke={NOTION_RED} strokeWidth={2} dot={false} />
                       <Line type="monotone" dataKey="catC" stroke={NOTION_YELLOW} strokeWidth={2} dot={false} />

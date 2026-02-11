@@ -193,6 +193,7 @@ export const translations = {
           signals: "Forward Signals",
           yoyBadge: "YoY +45.6%",
           procurement: "Procurement",
+          engineering: "Engineering",
           others: "Others",
           growth: "Growth",
           decisionMakers: "Decision Makers",
@@ -209,7 +210,7 @@ export const translations = {
         e1: { name: '12th AIB-MENA Conference 2024', org: 'University of Birmingham (Dubai Campus)', roles: ['Event Support', 'On-site Operations'] },
         e2: { name: 'Encounter among Blossoms – The Elegant Gathering of the Song Dynasty', org: 'Consulate General of China in Dubai, UAE', roles: ['Event Support', 'Language Support', 'On-site Operations'] },
         e3: { name: 'Power the Digital Era Forward - Global Data Center Facility Summit 2025 (Dubai)', org: 'Huawei', roles: ['Event Support', 'On-site Operations', 'Language Support'] },
-        e4: { name: 'WieTec & WATERTECH CHINA 2024/2025', org: '荷瑞集团', roles: ['Event Support', 'Language Support'] }
+        e4: { name: 'WieTec & WATERTECH CHINA 2024/2025', org: 'Herui Group', roles: ['Event Support', 'Language Support'] }
       }
     },
     skills: {
@@ -426,10 +427,11 @@ export const translations = {
           intlReach: "国际影响力",
           audienceQuality: "观众质量分布",
           productDemand: "产品需求趋势",
-          regionalExp: "区域扩张：中东非 (MENA)",
+          regionalExp: "区域扩张：中东北非 (MENA)",
           signals: "前瞻性信号",
           yoyBadge: "同比 +45.6%",
           procurement: "采购/决策",
+          engineering: "工程技术",
           others: "其他",
           growth: "增长",
           decisionMakers: "拥有决策权",
