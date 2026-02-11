@@ -28,10 +28,10 @@ const AUDIENCE_DATA = [
 ];
 
 const DEMAND_DATA = [
-  { name: 'Q1', catA: 30, catB: 20, catC: 10 },
-  { name: 'Q2', catA: 45, catB: 25, catC: 15 },
-  { name: 'Q3', catA: 55, catB: 35, catC: 25 },
-  { name: 'Q4', catA: 70, catB: 40, catC: 35 },
+  { name: '2022', catA: 30, catB: 20, catC: 10 },
+  { name: '2023', catA: 45, catB: 25, catC: 15 },
+  { name: '2024', catA: 55, catB: 35, catC: 25 },
+  { name: '2025', catA: 70, catB: 40, catC: 35 },
 ];
 
 const MENA_DATA = [
